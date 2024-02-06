@@ -1,0 +1,14 @@
+/*Main class*/
+.main{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+/*Header start*/
+.header{
+    
+}

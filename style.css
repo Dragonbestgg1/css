@@ -1,4 +1,8 @@
 /*Main class*/
+body{
+    background-color: rgb(34,40,49);
+    overflow: hidden;
+}
 .main{
     width: 100vw;
     height: auto;
@@ -10,5 +14,19 @@
 }
 /*Header start*/
 .header{
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.routes{
+    flex-direction: row;
+    width: 70%;
+    height: 5vh;
+    background-color: var(--clr-primary-3);
+}
+.redirect{
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
 }

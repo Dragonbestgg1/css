@@ -1,148 +1,1123 @@
 /*#region Main class*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
-*{
-    font-family: "Montserrat", sans-serif;
-}
-html::-webkit-scrollbar{
-    display: none;
-}
-body{
-    background-color: rgb(34,40,49);
-    overflow-x: hidden;
-}
-.main{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    color: white;
-}
+    *{
+        font-family: "Montserrat", sans-serif;
+        cursor: default;
+    }
+    button{
+        cursor: pointer;
+        border: none;
+    }
+    html::-webkit-scrollbar{
+        display: none;
+    }
+    body{
+        background-color: rgb(34,40,49);
+        overflow-x: hidden;
+        margin: 0px;
+    }
+    .main{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        color: white;
+    }
 /*#endregion*/
-
-/*#region Header start*/
-.header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    width: 90vw;
-}
-.routes{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.redirect,
-.order {
-    display: flex;
-    color: white;
-    font-weight: 700;
-    font-size: 28px;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.redirect::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    height: 2px;
-    background-color: aqua;
-    transition: all 0.5s ease;
-}
-
-.redirect:hover::after {
-    left: 0;
-    right: 0;
-}
-
-.logo {
-    display: flex;
-    width: 30%;
-    height: auto;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 10px;
-}
-.logoImg{
-    background: transparent;
-    color: white;
-}
-/*#endregion*/
-
-/*#region Content*/
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-.adjust-time{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.order{
-    background-color: rgb(41,161,156);
-    color: white;
-    width: 10vw;
-    border-radius: 10px;
-    font-weight: bolder;
-    padding: 5px;
-    font-size: 20px;
-}
-.coffeeTime{
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
-    justify-content: space-between;
-}
-.desc{
-    word-break: normal;
-    width: 33vw;
-}
-.coffeeTimeText{
-
-}
-/*#endregion*/
-
 /*#region Adjustments*/
 /* section adjustments */
-.time{
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-/* font adjustments */
-.bold{
-    font-weight: bold;
-}
-/* titles */
-.title
-{
-    font-family: "Grand Hotel", cursive;
-    font-weight: 400;
-    font-size: 100px;
-    letter-spacing: 2px;
-    color: white;
-    margin: 0;
-    margin-left: 40px;
-}
+    .time{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    /* font adjustments */
+    .bold{
+        font-weight: bold;
+    }
+    /* titles */
+    .title,
+    .title1,
+    .title2,
+    .title3,
+    .title4,
+    .title5
+    {
+        font-family: "Grand Hotel", cursive;
+        font-weight: 400;
+        font-size: 150px;
+        letter-spacing: 2px;
+        color: white;
+        margin: 0;
+    }
 /*#endregion*/
+/*#region Header start*/
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        width: 90vw;
+    }
+    .routes{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .redirect,
+    .order {
+        display: flex;
+        color: white;
+        font-weight: 700;
+        font-size: 28px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .redirect::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        height: 2px;
+        background-color: aqua;
+        transition: all 0.5s ease;
+    }
+
+    .redirect:hover::after {
+        left: 0;
+        right: 0;
+    }
+
+    .logo {
+        display: flex;
+        width: 30%;
+        height: auto;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    .logoImg{
+        background: transparent;
+        color: white;
+    }
+/*#endregion*/
+/*#region Content*/
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 220px;
+    }
+    /* #region coffeeTime */
+        .coffeeTime{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            justify-content: space-between;
+        }
+        .coffeeTimeText{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-left: 70px;
+        }
+        .order{
+            background-color: rgb(41,161,156);
+            color: white;
+            width: 10vw;
+            border-radius: 10px;
+            font-weight: bolder;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .desc{
+            word-break: normal;
+            width: 25vw;
+            font-size: 12px;
+        }
+        .coffeeTimeCup{
+            position: absolute;
+            width: 4%;
+            height: 8%;
+            opacity: 0.2;
+            rotate: 30deg;
+            margin-left: 800px;
+            margin-top: 10px;
+        }
+        .coffeeTimeBean{
+            position: absolute;
+            width: 3%;
+            height: 7%;
+            opacity: 0.2;
+            rotate: 50deg;
+            margin-left: 600px;
+            margin-top: 220px;
+        }
+        .coffeeTimeCoffeeBackground{
+            position: absolute;
+            margin-left: 700px;
+            height: 80%;
+        }
+        .coffeeTimePot{
+            position: absolute;
+            width: 5%;
+            height: 10%;
+            opacity: 0.2;
+            rotate: -60deg;
+            margin-top: 350px;
+            margin-left: 380px;
+            transform: scaleX(-1);
+        }
+        .wave{
+            position: absolute;
+            margin-top: 460px;
+            width: 101%;
+        }
+    /* #endregion */
+    /* #region black coffee */
+        .blackCoffee{
+            width: 101vw;
+            height: 75vh;
+            background-color: rgb(41,161,156);
+        }
+        .waveBlack{
+            position: absolute;
+            margin-top: 0px;
+            width: 101%;
+        }
+        .blackAlign{
+            width: 20vw;
+            height: 50vh;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+            margin-top: 60px;
+        }
+        .blackButton{
+            background-color: rgb(33,39,49);
+            color: white;
+            margin-top: 50px;
+            width: 10vw;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .blackCoffeeCoffee{
+            position: absolute;
+            height: 9%;
+            rotate: 40deg;
+            opacity: 0.4;
+            margin-top: -450px;
+            margin-left: 1370px;
+
+        }
+        .blackCoffeeBean,
+        .blackCoffeeBean1,
+        .blackCoffeeBean2,
+        .blackCoffeeBean3
+        {
+            position: absolute;
+            opacity: 0.4;
+        }
+        .blackCoffeeBean{
+            margin-top: -550px;
+            margin-left: 210px;
+            rotate: -25deg;
+            height: 9%;
+        }
+        .blackCoffeeBean1{
+            margin-top: 50px;
+            margin-left: 160px;
+            height: 6%;
+            rotate: -10deg;
+        }
+        .blackCoffeeBean2{
+            margin-top: -430px;
+            margin-left: 520px;
+            height: 6%;
+            rotate: 50deg;
+        }
+        .blackCoffeeBean3{
+            margin-top: -150px;
+            margin-left: 1370px;
+            height: 8%;
+            rotate: 40deg;
+        }
+        .blackCoffeePot{
+            position: absolute;
+            width: 5%;
+            height: 10%;
+            opacity: 0.4;
+            rotate: -60deg;
+            margin-top: -200px;
+            margin-left: 450px;
+            transform: scaleX(-1);
+        }
+        .blackCoffeeBackground{
+            position: absolute;
+            height: 50%;
+            margin-top: -460px;
+            margin-left: 800px;
+        }
+        .blackCoffeeTxt{
+            position: absolute;
+            font-size: 20px;
+            word-break: normal;
+            text-align: right;
+            width: 35vw;
+            margin-left: 750px;
+            margin-top: -30px;
+            font-weight: normal;
+        }
+        .title1{
+            font-size: 80px;
+        }
+    /* #endregion */
+    /* #region hot coffee */
+        .hotCoffee{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100vw;
+            justify-content: space-between;
+        }
+        .hotCoffeeAlign{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .hotCoffeeButton{
+            width: 10vw;
+            background-color: rgb(41,161,156);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .hotCoffeeCoffee{
+            position: absolute;
+            margin-right: 900px;
+            margin-top: -150px;
+            height: 50%;
+        }
+        .hotCoffeeTxt{
+            position: absolute;
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            line-height: 2;
+            width: 32vw;
+            word-break: normal;
+            margin-right: 900px;
+            margin-top: 300px;
+        }
+        .hotCoffeeCup{
+            position: absolute;
+            opacity: 0.2;
+            height: 10%;
+            margin-right: 1400px;
+            margin-top: -100px;
+        }
+        .hotCoffeeBean,
+        .hotCoffeeBean1{
+            position: absolute;
+            opacity: 0.2;
+        }
+        .hotCoffeeBean{
+            height: 9%;
+            margin-top: 170px;
+            margin-right: 30px;
+            rotate: 50deg;
+        }
+        .hotCoffeeBean1{
+            height: 5%;
+            margin-right: 700px;
+            margin-top: -70px;
+            rotate: 50deg;
+        }
+        .hotCoffeePot{
+            position: absolute;
+            opacity: 0.2;
+            transform: scaleX(-1);
+            margin-right: 500px;
+            margin-top: 350px;
+            height: 12%;
+        }
+        .title2{
+            font-size: 90px;
+            word-break: normal;
+            width: 20vw;
+            margin-right: 150px;
+            text-align: right;
+        }
+    /* #endregion */
+    /* #region white coffee */
+        .whiteCoffee{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            justify-content: space-between;
+        }
+        .whiteCoffeeAlign{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin-left: 100px;
+        }
+        .whiteCoffeeButton{
+            background-color: rgb(41,161,156);
+            color: white;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            font-weight: bold;
+            width: 10vw;
+        }
+        .whiteCoffeeImg{
+            position: absolute;
+            height: 50%;
+            margin-left: 900px;
+            margin-top: -70px;
+        }
+        .whiteCoffeeCoffee{
+            position: absolute;
+            opacity: 0.2;
+            margin-left: 1400px;
+            height: 9%;
+            transform: scaleX(-1);
+        }
+        .whiteCoffeeBean,
+        .whiteCoffeeBean1
+        {
+            position: absolute;
+            opacity: 0.2;
+        }
+        .whiteCoffeeBean{
+            margin-left: 200px;
+            margin-top: -80px;
+            height: 5%;
+            rotate: -10deg;
+        }
+        .whiteCoffeeBean1{
+            margin-left: 700px;
+            margin-top: 150px;
+            height: 5%;
+            rotate: -10deg;
+        }
+        .whiteCoffeePot{
+            position: absolute;
+            opacity: 0.2;
+            margin-left: 190px;
+            margin-top: 400px;
+            height: 11%;
+        }
+        .whiteCoffeeTxt{
+            position: absolute;
+            font-size: 18px;
+            font-weight: normal;
+            text-align: right;
+            line-height: 2;
+            width: 32vw;
+            word-break: normal;
+            margin-left: 900px;
+            margin-top: 360px;
+        }
+        .title3{
+            font-size: 90px;
+            word-break: normal;
+            width: 20vw;
+            margin-right: 150px;
+        }
+    /*#endregion*/
+    /* #region voucher */
+        .voucher{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .voucherDiv{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            width: 53vw;
+            height: 50vh;
+            box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+        }
+        .voucherDiscount{
+            position: absolute;
+            margin-right: 360px;
+        }
+        .voucherWaveBottom{
+            position: absolute;
+            margin-top: 300px;
+            margin-right: 371px;
+        }
+        .voucherWaveTop{
+            position: absolute;
+            margin-left: 390px;
+        }
+        .voucherName{
+            position: absolute;
+            margin-left: 240px;
+            margin-top: 170px;
+            font-family: "Grand Hotel", cursive;
+            font-weight: 400;
+            font-size: 60px;
+            letter-spacing: 2px;
+            color: white;
+            width: 60%;
+            height: 17vh;
+            text-align: center;
+        }
+        .voucherDesc{
+            position: absolute;
+            margin-top: 250px;
+            margin-left: 250px;
+            color: white;
+            font-weight: 100;
+            width: 30vw;
+            font-size: 10px;
+            font-family: 'Montserrat', 'sans-serif';
+            text-align: center;
+            word-break: normal;
+        }
+        .voucherCoffee{
+            position: absolute;
+            opacity: 0.2;
+            height: 10%;
+            margin-right: 1200px;
+            margin-top: 500px;
+        }
+        .voucherCoffeeBean{
+            position: absolute;
+            opacity: 0.2;
+            margin-left: 1200px;
+            margin-top: 200px;
+        }
+        .voucherCoffeePot{
+            position: absolute;
+            opacity: 0.2;
+            transform: scaleX(-1);
+            height: 12%;
+            margin-left: 1200px;
+            margin-top: 700px;
+        }
+        .voucherCoffeeIn{
+            position: absolute;
+            opacity: 0.2;
+            height: 7%;
+            margin-top: 100px;
+            margin-left: 500px;
+            rotate: 30deg;
+        }
+        .voucherCoffeeBeanIn{
+            position: absolute;
+            opacity: 0.2;
+            margin-top: 100px;
+            margin-left: 120px;
+            height: 4%;
+            rotate: -20deg;
+        }
+        .voucherCoffeeBeanIn1{
+            position: absolute;
+            opacity: 0.2;
+            margin-top: 300px;
+            margin-left: 650px;
+            height: 5%;
+            rotate: 40deg;
+        }
+        .voucherCoffeePotIn{
+            position: absolute;
+            opacity: 0.2;
+            transform: scaleX(-1);
+            height: 8%;
+            margin-top: 280px;
+            margin-right: 90px;
+            rotate: -60deg;
+        }
+        .voucherButton{
+            position: absolute;
+            width: 16vw;
+            padding: 5px;
+            background-color: rgb(41,161,156);
+            color: white;
+            border-radius: 10px;
+            margin-top: 290px;
+            margin-left: 250px;
+        }
+        .connections{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-top: 370px;
+            margin-left: 410px;
+            justify-content: space-evenly;
+        }
+        .connectionButton{
+            background: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+        }
+        .connectionImg{
+            height: 50%;
+        }
+        .voucherGet{
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            width: 15vw;
+            background-color: rgb(41,161,156);
+            color: white;
+            font-weight: bold;
+        }
+    /*#endregion*/
+    /* #region customer review */
+        .reviews{
+            width: 100vw;
+            gap: 30px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .reviewContain{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .review{
+            display: flex;
+            flex-direction: column;
+            width: 30vw;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .reviewImg{
+            height: 50%;
+        }
+        .reviewName{
+            font-family: "Grand Hotel", cursive;
+            font-weight: normal;
+        }
+        .reviewDesc{
+            width: 80%;
+            word-break: normal;
+            font-size: 18px;
+            text-align: center;
+            font-weight: normal;
+        }
+        .reviewCoffee{
+            position: absolute;
+            opacity: 0.2;
+            transform: scaleX(-1);
+            margin-top: 520px;
+            margin-left: 1100px;
+            height: 11%;
+        }
+        .reviewCoffeeBean{
+            position: absolute;
+            opacity: 0.2;
+            margin-top: 290px;
+            rotate: 30deg;
+            height: 9%;
+        }
+        .reviewCoffeePot{
+            position: absolute;
+            opacity: 0.2;
+            margin-top: 500px;
+            margin-right: 1100px;
+            height: 11%;
+        }
+    /*#endregion*/
+    /* #region job*/
+        .job{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100vw;
+            height: 60vh;
+            background-color: rgb(41,161,156);
+            gap: 50px;
+        }
+        .jobWaveTop{
+            position: absolute;
+            margin-top: -220px;
+            width: 100%;
+        }
+        .jobWaveBottom{
+            position: absolute;
+            margin-top: 420px;
+            width: 100%;
+        }
+        .title5{
+            font-size: 88px;
+            text-align: center;
+        }
+        .adjust-time{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+        }
+        .jobDate{
+            margin: 0px;
+        }
+        .jobTime{
+            font-weight: normal;
+        }
+        .jobCoffee{
+            position: absolute;
+            opacity: 0.5;
+            margin-top: 230px;
+            margin-right: 900px;
+        }
+        .jobCoffeeBean,
+        .jobCoffeeBean1
+        {
+            position: absolute;
+            opacity: 0.5;
+        }
+        .jobCoffeeBean{
+            margin-right: 1200px;
+            margin-top: 70px;
+            rotate: -10deg;
+            height: 5%;
+        }
+        .jobCoffeeBean1{
+            margin-top: 350px;
+            margin-left: 1000px;
+            rotate: 40deg;
+        }
+        .jobCoffeePot{
+            position: absolute;
+            opacity: 0.5;
+            transform: scaleX(-1);
+            margin-top: 30px;
+            margin-left: 1100px;
+            height: 13%;
+        }
+    /*#endregion*/
+    /* #region branch*/
+        .branch{
+            width: 100vw;
+            gap: 30px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .branchContain{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .branchDisplay{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .branchImg{
+            height: 60%;
+        }
+        .branchButton{
+            background-color: rgb(41,161,156);
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            width: 10vw;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        .branchDesc{
+            width: 20vw;
+            font-size: 14px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 2;
+        }
+        .branchCoffee{
+            position: absolute;
+            opacity: 0.2;
+            margin-top: 670px;
+            margin-left: 500px;
+            height: 9%;
+        }
+        .branchCoffeeBean,
+        .branchCoffeeBean1
+        {
+            position: absolute;
+            opacity: 0.2;
+        }
+        .branchCoffeeBean{
+            margin-right: 800px;
+            margin-top: 20px;
+            rotate: 40deg;
+            height: 7%;
+        }
+        .branchCoffeeBean1{
+            margin-left: 1250px;
+            margin-top: 65px;
+            rotate: -10deg;
+            height: 7%;
+        }
+        .branchCoffeePot{
+            position: absolute;
+            opacity: 0.2;
+            transform: scaleX(-1);
+            margin-top: 620px;
+            margin-right: 400px;
+            height: 9%;
+        }
+    /*#endregion*/
+    /* #region footer*/
+        .footer{
+            width: 100vw;
+            height: 53vh;
+            background-color: rgb(41,161,156);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 20px;
+        }
+        .footerWave{
+            position: absolute;
+            margin-top: -190px;
+            width: 100%;
+        }
+        .footerInfo{
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+            gap: 20px;
+        }
+        .footerAlign{
+            display: flex;
+            flex-direction: row;
+        }
+        .footerH1{
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .footerLinks{
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .footerLogo{
+            position: absolute;
+            margin-right: 1200px;
+        }
+        .footerHeader{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 98%;
+        }
+        .footerLogos{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 30px;
+            width: 30vw;
+            gap: 40px;
+        }
+        .footerLink{
+            height: 20%;
+        }
+    /*#endregion*/
+/*#endregion*/
+@media only screen and (max-width: 900px){
+    .main{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .content{
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    .hotCoffeeBean,
+    .hotCoffeeBean1,
+    .jobCoffeeBean,
+    .jobCoffeeBean1,
+    .coffeeTimeBean,
+    .blackCoffeeBean,
+    .blackCoffeeBean1,
+    .blackCoffeeBean2,
+    .blackCoffeeBean3,
+    .whiteCoffeeBean,
+    .whiteCoffeeBean1,
+    .branchCoffeeBean,
+    .branchCoffeeBean1,
+    .reviewCoffeeBean,
+    .voucherCoffeeBean,
+    .voucherCoffeeBeanIn,
+    .voucherCoffeeBeanIn1,
+    .hotCoffeeCoffee
+    .blackCoffeeCoffee,
+    .whiteCoffeeCoffee,
+    .coffeeTimeCup,
+    .blackCoffeeCoffee,
+    .jobCoffee,
+    .branchCoffee,
+    .reviewCoffee,
+    .voucherCoffee,
+    .voucherCoffeeIn,
+    .hotCoffeePot,
+    .jobCoffeePot,
+    .coffeeTimePot,
+    .blackCoffeePot,
+    .whiteCoffeePot,
+    .branchCoffeePot,
+    .reviewCoffeePot,
+    .voucherCoffeePot,
+    .voucherCoffeePotIn
+    {
+        display: none;
+    }
+    /* #region header */
+        .header{
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        }
+        .routes {
+            display: none;
+        }
+        .toggle-btn {
+            display: flex;
+        }
+    /* #endregion */
+    /* #region coffeeTime */
+        .coffeeTime{
+            align-items: center;
+            width: auto;
+        }
+        .coffeeTimeText{
+            margin: 0px;
+        }
+        .title{
+            font-size: 56px;
+            width: 70vw;
+            text-align: center;
+        }
+        .bold{
+            font-size: 26px;
+            width: 70vw;
+            text-align: center;
+        }
+        .desc{
+            width: 70vw;
+            text-align: center;
+        }
+        .order{
+            width: 70vw;
+        }
+        .wave{
+            margin-left: -43px;
+            width: 100%;
+        }
+    /* #endregion */
+    /* #region black coffee */
+        .blackCoffee{
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        .blackAlign{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0px;
+        }
+        .title1{
+            font-size: 56px;
+            width: 70vw;
+            text-align: center;
+        }
+        .blackButton{
+            width: 70vw;
+        }
+        .blackCoffeeTxt{
+            position: unset;
+            margin: 0px;
+            width: 70vw;
+            font-size: 12px;
+            text-align: center;
+        }
+        .waveBlack{
+            margin-top: 500px;
+        }
+    /* #endregion */
+    /* #region hot coffee */
+        .hotCoffee{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .hotCoffeeButton{
+            width: 70vw;
+        }
+        .hotCoffeeTxt{
+            position: unset;
+            margin: 0px;
+            font-size: 14px;
+            width: 70vw;
+            text-align: center;
+        }
+        .title2{
+            text-align: center;
+            width: 70vw;
+            margin: 0px;
+            font-size: 56px;
+        }
+    /* #endregion */
+    /* #region white coffee */
+        .whiteCoffee{
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .whiteCoffeeAlign{
+            margin: 0px;
+        }
+        .whiteCoffeeButton{
+            width: 70vw;
+        }
+        .title3{
+            margin: 0px;
+            width: 70vw;
+            text-align: center;
+            font-size: 56px;
+        }
+        .whiteCoffeeTxt{
+            position: unset;
+            margin: 0px;
+            width: 70vw;
+            font-size: 12px;
+            text-align: center;
+        }
+    /* #endregion */
+    /* #region voucher */
+        .title4{
+            font-size: 56px;
+            text-align: center;
+        }
+        .voucherDiv{
+            display: none;
+        }
+        .voucherGet{
+            width: 70vw;
+        }
+        .reviewDesc{
+            font-size: 12px;
+        }
+    /* #endregion */
+    /* #region customer review */
+        .title5{
+            font-size: 56px;
+            width: 70vw;
+            text-align: center;
+        }
+        .reviewName{
+            text-align: center;
+        }
+        .reviewImg{
+            height: 15%;
+        }
+    /* #endregion */
+    /* #region job */
+        .jobWaveTop{
+            margin-top: -50px;
+        }
+    /* #endregion */
+    /* #region branch */
+        .branchContain{
+            justify-content: center;
+            gap: 20px;
+        }
+        .branchDisplay{
+            width: 25vw;
+        }
+        .branchButton{
+            width: 25vw;
+            font-size: 14px;
+        }
+        .branchDesc{
+            font-size: 10px;
+            width: 100%;
+        }
+        .branchImg{
+            height: 15%;
+        }
+    /* #endregion */
+    /* #region footer */
+        .footer{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        .footerAlign{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        .footerInfo{
+            width: 100%;
+            text-align: center;
+        }
+        .footerWave{
+            margin-top: -40px;
+        }
+    /* #endregion */
+}
+@media (min-width: 901px) {
+    .routes {
+        display: flex;
+    }
+    .toggle-btn {
+        display: none;
+    }
+}

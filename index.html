@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="main">
         <!-- Header start -->
         <div class="header">
+            <!-- <button class="toggle-btn">Toggle Menu</button> -->
             <div class="routes">
                 <p class="redirect" role="button" tabindex="0">Home</p>
                 <p class="redirect" role="button" tabindex="0">About</p>
@@ -28,69 +26,273 @@
             <!-- Header end -->
             <!-- Content start -->
         <div class="content">
-            <!-- coffee time section -->
+            <!-- coffee time div -->
             <div class="coffeeTime">
                 <div class="coffeeTimeText">
                     <h1 class="title">Coffee Time</h1>
-                    <section id="aboutus">
-                        <h1>YOUR HEADLINE</h1>
+                    <div id="aboutus" class="coffeeAlign">
+                        <h1 class="bold">YOUR HEADLINE</h1>
                         <p class="desc">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                             sed do eiusmod tempor incidididunt ut labore et 
                             dolore magna aliqua.
                         </p>
                         <p class="order" role="button" tabindex="0">Order Now</p>
-                    </section>
+                    </div>
+                </div>
+                <img src="../assets/icons/coffee.png" class="coffeeTimeCup">
+                <img src="../assets/icons/coffeeBean.png" class="coffeeTimeBean">
+                <img src="../assets/images/background775.png" class="coffeeTimeCoffeeBackground">
+                <img src="../assets/icons/coffeePot.png" class="coffeeTimePot">
+                <img src="../assets/waves/wave1.png" class="wave">
+            </div>
+            <!-- black coffee div -->
+            <div class="blackCoffee">
+                <div class="blackAlign">
+                    <h1 class="title1">Black Coffees</h1>
+                    <button class="blackButton">Order Now</button>
+                </div>
+                <img src="../assets/waves/wave2.png" class="waveBlack">
+                <img src="../assets/icons/coffee.png" class="blackCoffeeCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="blackCoffeeBean">
+                <img src="../assets/icons/coffeeBean.png" class="blackCoffeeBean1">
+                <img src="../assets/icons/coffeeBean.png" class="blackCoffeeBean2">
+                <img src="../assets/icons/coffeeBean.png" class="blackCoffeeBean3">
+                <img src="../assets/icons/coffeePot.png" class="blackCoffeePot">
+                <img src="../assets/images/background776.png" class="blackCoffeeBackground">
+                <h1 class="blackCoffeeTxt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incidididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                </h1>
+            </div>
+            <!-- hot coffee div -->
+            <div class="hotCoffee">
+                <div class="hotCoffeeAlign">
+                    <h1 class="title2">
+                        Hot Coffees
+                    </h1>
+                    <button class="hotCoffeeButton">Order Now</button>
+                </div>
+                <img src="../assets/images/coffe778.png" class="hotCoffeeCoffee">
+                <h1 class="hotCoffeeTxt">
+                    Lorem ipsum, dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incidididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                </h1>
+                <img src="../assets/icons/coffee.png" class="hotCoffeeCup">
+                <img src="../assets/icons/coffeeBean.png" class="hotCoffeeBean">
+                <img src="../assets/icons/coffeeBean.png" class="hotCoffeeBean1">
+                <img src="../assets/icons/coffeePot.png" class="hotCoffeePot">
+            </div>
+            <!-- white coffee div -->
+            <div class="whiteCoffee">
+                <div class="whiteCoffeeAlign">
+                    <h1 class="title3">
+                        White Coffees
+                    </h1>
+                    <button class="whiteCoffeeButton">Order Now</button>
+                </div>
+                <img src="../assets/images/coffe777.png" class="whiteCoffeeImg">
+                <img src="../assets/icons/coffee.png" class="whiteCoffeeCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="whiteCoffeeBean">
+                <img src="../assets/icons/coffeeBean.png" class="whiteCoffeeBean1">
+                <img src="../assets/icons/coffeePot.png" class="whiteCoffeePot">
+                <h1 class="whiteCoffeeTxt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incidididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi 
+                    ut aliquip ea commodo.
+                </h1>
+            </div>
+            <!-- vouncher -->
+            <div class="voucher">
+                <h1 class="title4">
+                    Voucher
+                </h1>
+                <div class="voucherDiv">
+                    <img src="../assets/voucher/imageWDiscount.png" class="voucherDiscount">
+                    <img src="../assets/voucher/waveBottom.png" class="voucherWaveBottom">
+                    <img src="../assets/voucher/waveTop.png" class="voucherWaveTop">
+                    <h1 class="voucherName">Voucher Discount</h1>
+                    <h2 class="voucherDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Quis ipsum suspendisse ultrices gravida.
+                    </h2>
+                    <img src="../assets/icons/coffee.png" class="voucherCoffeeIn">
+                    <img src="../assets/icons/coffeeBean.png" class="voucherCoffeeBeanIn">
+                    <img src="../assets/icons/coffeeBean.png" class="voucherCoffeeBeanIn1">
+                    <img src="../assets/icons/coffeePot.png" class="voucherCoffeePotIn">
+                    <button class="voucherButton">VALITADE UNTIL: 01.05.2020</button>
+                    <div class="connections">
+                        <button class="connectionButton">
+                            <img src="../assets/icons/twt.png" class="connectionImg">
+                            your account
+                        </button>
+                        <button class="connectionButton">
+                            <img src="../assets/icons/ig.png" class="connectionImg">
+                            your account
+                        </button>
+                        <button class="connectionButton">
+                            <img src="../assets/icons/fb.png" class="connectionImg">
+                            your account
+                        </button>
+                    </div>
+                </div>
+                <img src="../assets/icons/coffee.png" class="voucherCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="voucherCoffeeBean">
+                <img src="../assets/icons/coffeePot.png" class="voucherCoffeePot">
+                <button class="voucherGet">Get Voucher Now</button>
+            </div>
+            <!-- reviews div -->
+            <div class="reviews">
+                <h1 class="title4">
+                    Customer Reviews
+                </h1>
+                <div class="reviewContain">
+                    <div class="review">
+                        <img src="../assets/images/john.png" class="reviewImg">
+                        <h1 class="reviewName">
+                            John Peter
+                        </h1>
+                        <h1 class="reviewDesc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis
+                        </h1>
+                    </div>
+                    <div class="review">
+                        <img src="../assets/images/ella.png" class="reviewImg">
+                        <h1 class="reviewName">
+                            Ella Thomson
+                        </h1>
+                        <h1 class="reviewDesc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Quis
+                        </h1>
+                    </div>
+                </div>
+                <img src="../assets/icons/coffee.png" class="reviewCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="reviewCoffeeBean">
+                <img src="../assets/icons/coffeePot.png" class="reviewCoffeePot">
+            </div>
+            <!-- job time -->
+            <div class="job">
+                <img src="../assets/waves/wave3.png" class="jobWaveTop">
+                <h1 class="title5">We are Open</h1>
+                <div class="adjust-time">
+                    <h3 class="jobDate">Monday - Friday</h3>
+                    <h3 class="jobTime">10:00 am - 10:00 pm</h3>
+                </div>
+                <div class="adjust-time">
+                    <h3 class="jobDate">Saturday and Sunday</h3>
+                    <h3 class="jobTime">10:00 am - 10:00 pm</h3>
+                </div>
+                <img src="../assets/waves/wave4.png" class="jobWaveBottom">
+                <img src="../assets/icons/coffee.png" class="jobCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="jobCoffeeBean">
+                <img src="../assets/icons/coffeeBean.png" class="jobCoffeeBean1">
+                <img src="../assets/icons/coffeePot.png" class="jobCoffeePot">
+            </div>
+            <!-- branches -->
+            <div class="branch">
+                <h1 class="title5">Our Branches</h1>
+                <div class="branchContain">
+                    <div class="branchDisplay">
+                        <img src="../assets/images/newYork.png" class="branchImg">
+                        <button class="branchButton">New York</button>
+                        <h1 class="branchDesc">
+                            lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            ua. Ut enim ad minim veniam, quis nostrud exercitation
+                        </h1>
+                    </div>
+                    <div class="branchDisplay">
+                        <img src="../assets/images/jakarta.png" class="branchImg">
+                        <button class="branchButton">Jakarta</button>
+                        <h1 class="branchDesc">
+                            lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            ua. Ut enim ad minim veniam, quis nostrud exercitation
+                        </h1>
+                    </div>
+                    <div class="branchDisplay">
+                        <img src="../assets/images/paris.png" class="branchImg">
+                        <button class="branchButton">Paris</button>
+                        <h1 class="branchDesc">
+                            lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            ua. Ut enim ad minim veniam, quis nostrud exercitation
+                        </h1>
+                    </div>
+                </div>
+                <img src="../assets/icons/coffee.png" class="branchCoffee">
+                <img src="../assets/icons/coffeeBean.png" class="branchCoffeeBean">
+                <img src="../assets/icons/coffeeBean.png" class="branchCoffeeBean1">
+                <img src="../assets/icons/coffeePot.png" class="branchCoffeePot">
+            </div>
+            <!-- footer info -->
+            <div class="footer">
+                <img src="../assets/waves/wave5.png" class="footerWave">
+                <img src="../assets/logo.png" class="footerLogo">
+                <div class="footerAlign">
+                    <div class="footerInfo">
+                        <h1 class="footerH1">
+                            Information.
+                        </h1>
+                        <div>
+                            <h1 class="footerLinks">
+                                About us
+                            </h1>
+                            <h1 class="footerLinks">
+                                Branches
+                            </h1>
+                            <h1 class="footerLinks">
+                                Menu
+                            </h1>
+                            <h1 class="footerLinks">
+                                Contact
+                            </h1>
+                            <h1 class="footerLinks">
+                                Map
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="footerInfo">
+                        <h1 class="footerH1">
+                            Contact Us.
+                        </h1>
+                        <div>
+                            <h1 class="footerLinks">
+                                Support
+                            </h1>
+                            <h1 class="footerLinks">
+                                your_id@gmail.com
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerHeader">
+                    <div class="routes">
+                        <p class="redirect" role="button" tabindex="0">Home</p>
+                        <p class="redirect" role="button" tabindex="0">About</p>
+                        <p class="redirect" role="button" tabindex="0">Menu</p>
+                        <p class="redirect" role="button" tabindex="0">Blog</p>
+                        <p class="redirect" role="button" tabindex="0">Shop</p>
+                        <p class="redirect" role="button" tabindex="0">Contact</p>
+                    </div>
+                    <div class="footerLogos">
+                        <img src="assets/icons/fb.png" class="footerLink">
+                        <img src="assets/icons/ig.png" class="footerLink">
+                        <img src="assets/icons/twt.png" class="footerLink">
+                        <img src="assets/icons/yt.png" class="footerLink">
+                    </div>
                 </div>
             </div>
-            <!-- black coffee section -->
-            <section id="ourstory">
-                <h3>Our Story</h3>
-                <h1>
-                    1956 - The company is founded by two passionate chefs who wanted to share their love for food with the world.   
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas voluptates eaque iure, fugiat dolorum
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam voluptates iure eaque, 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptas quod nulla eaque fuga iure
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quod.</p>
-            </section>
-            <!-- hot coffee section -->
-            <section>
-
-            </section>
-            <!-- white coffee section -->
-            <section>
-
-            </section>
-            <!-- vouncher -->
-            <section>
-
-            </section>
-            <!-- reviews section -->
-            <section>
-
-            </section>
-            <!-- job time -->
-            <section class="time">
-                <h1 class="bold">We are Open</h1>
-                <div class="adjust-time">
-                    <h3 class="bold">Monday - Friday</h3>
-                    <h3 class="bold">10:00 am - 10:00 pm</h3>
-                </div>
-                <div class="adjust-time">
-                    <h3 class="bold">Saturday and Sunday</h3>
-                    <h3 class="bold">10:00 am - 10:00 pm</h3>
-                </div>
-            </section>
-            <!-- branches -->
-            <section>
-
-            </section>
-            <!-- footer info -->
-            <section>
-
-            </section>
         </div>
     </div>
 </body>
+<script src="actions.js"></script>
 </html>

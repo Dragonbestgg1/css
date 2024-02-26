@@ -873,7 +873,11 @@
         width: 100vw;
         align-items: center;
         justify-content: flex-start;
-        gap: 50px;
+    }
+    .logoStart{
+        position: absolute;
+        height: 3%;
+        margin-right: 100px;
     }
     .hotCoffeeBean,
     .hotCoffeeBean1,
@@ -920,11 +924,17 @@
             align-items: center;
             justify-content: center;
         }
-        .routes {
-            display: none;
-        }
         .toggle-btn {
             display: flex;
+            margin-left: 300px;
+            font-size: 24px;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            background: none;
+            line-height: 0.3;
+            color: white;
         }
     /* #endregion */
     /* #region coffeeTime */
@@ -954,7 +964,15 @@
         }
         .wave{
             margin-left: -43px;
+            margin-top: 800px;
             width: 100%;
+        }
+        .coffeeTimeCoffeeBackground{
+            position: absolute;
+            height: 30%;
+            margin: 0px;
+            margin-top: 630px;
+            margin-left: 30px;
         }
     /* #endregion */
     /* #region black coffee */
@@ -964,6 +982,7 @@
             align-items: center;
             justify-content: flex-start;
             flex-direction: column;
+            height: 100vh;
         }
         .blackAlign{
             display: flex;
@@ -987,6 +1006,11 @@
             text-align: center;
         }
         .waveBlack{
+            margin-top: 700px;
+        }
+        .blackCoffeeBackground{
+            margin: 0px;
+            height: 25%;
             margin-top: 500px;
         }
     /* #endregion */
@@ -1019,6 +1043,7 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
+            height: 70vh;
         }
         .whiteCoffeeAlign{
             margin: 0px;
@@ -1039,6 +1064,11 @@
             font-size: 12px;
             text-align: center;
         }
+        .whiteCoffeeImg{
+            margin: 0px;
+            height: 25%;
+            margin-top: 450px;
+        }
     /* #endregion */
     /* #region voucher */
         .title4{
@@ -1046,7 +1076,56 @@
             text-align: center;
         }
         .voucherDiv{
-            display: none;
+            width: 70vw;
+            height: 17vh;
+        }
+        .voucherDiscount{
+            height: 15%;
+            margin: 0px;
+            margin-right: 100px;
+        }
+        .voucherWaveTop{
+            height: 8%;
+            margin: 0px;
+            margin-left: 100px;
+        }
+        .voucherWaveBottom{
+            height: 7%;
+            margin: 0px;
+            margin-top: 71px;
+            margin-right: 12px;
+        }
+        .voucherName{
+            margin: 0px;
+            font-size: 14px;
+            margin-top: 40px;
+            margin-left: 70px;
+        }
+        .voucherDesc{
+            margin: 0px;
+            font-size: 4px;
+            margin-top: 60px;
+            margin-left: 60px;
+            width: 40vw;
+        }
+        .connections{
+            margin: 0px;
+            gap: 3px;
+            margin-top: 100px;
+            margin-right: 30px;
+        }
+        .connectionButton{
+            font-size: 4px;
+        }
+        .connectionImg{
+            height: 30%;
+        }
+        .voucherButton{
+            margin: 0px;
+            width: 30vw;
+            font-size: 6px;
+            margin-top: 80px;
+            margin-left: 70px;
         }
         .voucherGet{
             width: 70vw;
@@ -1070,7 +1149,7 @@
     /* #endregion */
     /* #region job */
         .jobWaveTop{
-            margin-top: -50px;
+            margin-top: -49px;
         }
     /* #endregion */
     /* #region branch */
@@ -1111,13 +1190,56 @@
         .footerWave{
             margin-top: -40px;
         }
+        .footerHeader{
+            flex-direction: column;
+            width: 70vw;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .routes{
+            flex-direction: column;
+        }
+        .footerLogos{
+            flex-direction: column;
+            padding: 10px;
+            margin: 0px;
+            width: 50%;
+            height: 10vh;
+            flex-wrap: wrap;
+        }
     /* #endregion */
+    .routes {
+        display: none;
+        position: absolute;
+        margin-top: 800px;
+        background-color: rgb(34,40,49);
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        overflow: hidden;
+    }
+    body.no-scroll {
+        overflow: hidden;
+    }
+    
 }
+.routes.hide {
+    display: none;
+}
+
+.routes.show {
+    display: block;
+}
+
 @media (min-width: 901px) {
     .routes {
         display: flex;
+        flex-direction: row;
     }
     .toggle-btn {
         display: none;
+    }
+    .routes.show{
+        display: flex;
     }
 }

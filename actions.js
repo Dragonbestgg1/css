@@ -34,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('resize', checkDeviceWidth);
-    checkDeviceWidth(); // Call the function initially to set the correct flex-direction
+    checkDeviceWidth(); 
 });

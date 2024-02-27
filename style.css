@@ -103,11 +103,8 @@
     }
 
     .logo {
-        display: flex;
-        width: 30%;
-        height: auto;
-        border-radius: 5px;
-        display: flex;
+        /* display: flex;
+        width: 30%; */
         align-items: center;
         justify-content: flex-end;
         margin-right: 10px;
@@ -762,6 +759,18 @@
             width: 10vw;
             border-radius: 10px;
             font-size: 24px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 1.5px;
+                width: 6px;
+                height: 15px;
+                border-radius: 5px;
+                background-color: rgb(41,161,156);
+                transform: skewX(13deg);
+            }
         }
         .branchDesc{
             width: 20vw;
@@ -875,66 +884,68 @@
         justify-content: flex-start;
     }
     .logoStart{
-        position: absolute;
-        height: 3%;
-        margin-right: 100px;
+        height: 30px;
     }
-    .hotCoffeeBean,
-    .hotCoffeeBean1,
-    .jobCoffeeBean,
-    .jobCoffeeBean1,
-    .coffeeTimeBean,
-    .blackCoffeeBean,
-    .blackCoffeeBean1,
-    .blackCoffeeBean2,
-    .blackCoffeeBean3,
-    .whiteCoffeeBean,
-    .whiteCoffeeBean1,
-    .branchCoffeeBean,
-    .branchCoffeeBean1,
-    .reviewCoffeeBean,
-    .voucherCoffeeBean,
-    .voucherCoffeeBeanIn,
-    .voucherCoffeeBeanIn1,
-    .hotCoffeeCoffee
-    .blackCoffeeCoffee,
-    .whiteCoffeeCoffee,
-    .coffeeTimeCup,
-    .blackCoffeeCoffee,
-    .jobCoffee,
-    .branchCoffee,
-    .reviewCoffee,
-    .voucherCoffee,
-    .voucherCoffeeIn,
-    .hotCoffeePot,
-    .jobCoffeePot,
-    .coffeeTimePot,
-    .blackCoffeePot,
-    .whiteCoffeePot,
-    .branchCoffeePot,
-    .reviewCoffeePot,
-    .voucherCoffeePot,
-    .voucherCoffeePotIn
-    {
-        display: none;
-    }
+    /* #region dispose */
+        .hotCoffeeBean,
+        .hotCoffeeBean1,
+        .jobCoffeeBean,
+        .jobCoffeeBean1,
+        .coffeeTimeBean,
+        .blackCoffeeBean,
+        .blackCoffeeBean1,
+        .blackCoffeeBean2,
+        .blackCoffeeBean3,
+        .whiteCoffeeBean,
+        .whiteCoffeeBean1,
+        .branchCoffeeBean,
+        .branchCoffeeBean1,
+        .reviewCoffeeBean,
+        .voucherCoffeeBean,
+        .voucherCoffeeBeanIn,
+        .voucherCoffeeBeanIn1,
+        .hotCoffeeCoffee
+        .blackCoffeeCoffee,
+        .whiteCoffeeCoffee,
+        .coffeeTimeCup,
+        .blackCoffeeCoffee,
+        .jobCoffee,
+        .branchCoffee,
+        .reviewCoffee,
+        .voucherCoffee,
+        .voucherCoffeeIn,
+        .hotCoffeePot,
+        .jobCoffeePot,
+        .coffeeTimePot,
+        .blackCoffeePot,
+        .whiteCoffeePot,
+        .branchCoffeePot,
+        .reviewCoffeePot,
+        .voucherCoffeePot,
+        .voucherCoffeePotIn
+        {
+            display: none;
+        }
+    /* #endregion */
     /* #region header */
         .header{
-            width: 100vw;
             align-items: center;
             justify-content: center;
+            width: unset;
         }
         .toggle-btn {
             display: flex;
-            margin-left: 300px;
             font-size: 24px;
-            align-items: center;
-            justify-content: flex-start;
-            display: flex;
+            gap: 5px;
             flex-direction: column;
             background: none;
             line-height: 0.3;
             color: white;
+            position: absolute;
+            right: 5px;
+        }
+        .logo{
+            margin: 0px;
         }
     /* #endregion */
     /* #region coffeeTime */
@@ -972,7 +983,7 @@
             height: 30%;
             margin: 0px;
             margin-top: 630px;
-            margin-left: 30px;
+            margin-left: 10px;
         }
     /* #endregion */
     /* #region black coffee */
@@ -1144,7 +1155,16 @@
             text-align: center;
         }
         .reviewImg{
-            height: 15%;
+            width: 120%;
+        }
+        .review{
+            width: 70vw;
+        }
+        .reviewContain{
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
         }
     /* #endregion */
     /* #region job */
@@ -1155,18 +1175,20 @@
     /* #region branch */
         .branchContain{
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
         .branchDisplay{
             width: 25vw;
         }
         .branchButton{
-            width: 25vw;
-            font-size: 14px;
+            width: 50vw;
+            font-size: 18px;
         }
         .branchDesc{
-            font-size: 10px;
-            width: 100%;
+            font-size: 15px;
+            width: 70vw;
         }
         .branchImg{
             height: 15%;

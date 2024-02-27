@@ -13,6 +13,9 @@
     html::-webkit-scrollbar{
         display: none;
     }
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         background-color: rgb(34,40,49);
         overflow-x: hidden;
@@ -27,6 +30,9 @@
         justify-content: flex-start;
         gap: 20px;
         color: white;
+    }
+    a{
+        text-decoration: none;
     }
 /*#endregion*/
 /*#region Adjustments*/

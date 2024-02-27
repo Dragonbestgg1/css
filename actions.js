@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     var toggleBtn = document.querySelector('.toggle-btn');
     var routes = document.querySelector('.routes');
-    var body = document.body;
+    let body = document.body;
+    let redirect = document.querySelectorAll('.redirect');
 
     function checkDeviceWidth() {
         if(window.innerWidth > 900) {
@@ -32,7 +33,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    if(redirect){
+        for (let i=0; i < redirect.length; i++) {
+            redirect[i].addEventListener('click', function(){
+                if (routes.classList.contains('show')) {
+                    routes.classList.remove('show');
+                    routes.classList.add('hide');
+                    body.classList.remove('no-scroll');
+                }
+            });
+        }
+    }
 
     window.addEventListener('resize', checkDeviceWidth);
     checkDeviceWidth(); 
 });
+
